@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+    <style>
+        #teclado {
+            margin-top: 20px;
+        }
+    
+        button {
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora Web</h1>
+    <form method="POST" action="/">
+        <input type="text" id="display" name="expressao" value="{{ display }}" readonly>
+        <div id="teclado">
+            <!--Botões-->
+            <button type="submit" name="botao" value="7">7</button>
+            <button type="submit" name="botao" value="8">8</button>
+            <button type="submit" name="botao" value="9">9</button>
+            <button type="submit" name="botao" value="+">+</button>
+            <br>
+            <button type="submit" name="botao" value="4">4</button>
+            <button type="submit" name="botao" value="5">5</button>
+            <button type="submit" name="botao" value="6">6</button>
+            <button type="submit" name="botao" value="-">-</button>
+            <br>
+            <button type="submit" name="botao" value="1">1</button>
+            <button type="submit" name="botao" value="2">2</button>
+            <button type="submit" name="botao" value="3">3</button>
+            <button type="submit" name="botao" value="*">*</button>
+            <br>
+            <button type="submit" name="botao" value="0">0</button>
+            <button type="submit" name="botao" value=".">.</button>
+            <button type="submit" name="botao" value="=">=</button>
+            <button type="submit" name="botao" value="/">/</button>
+        </div>
+    </form>
+</body>
+</html>
